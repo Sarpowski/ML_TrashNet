@@ -98,4 +98,4 @@ window = TrashClassifierApp()
 window.resize(400, 400)
 window.show()
 
-sys.exit(app.exec())`
+sys.exit(app.exec())
