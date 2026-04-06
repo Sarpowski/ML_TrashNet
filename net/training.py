@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import json
 import logging
+import math
 import random
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -10,8 +12,9 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
+from sklearn.metrics import classification_report, confusion_matrix
 from torch.utils.data import DataLoader, Dataset, Subset
-from torchvision import datasets, transforms
+from torchvision import datasets, models, transforms
 
 
 # ============================================================
